@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/*
+	Project Part 1
+
+	CSS Layout Sheet
+	Author: Rosario Sanchez
+	Date:   2024-10-27
+
+	Filename: layout.css
+
+   This file contains the layout style.
+
+*/
+
+/* Base layout styles */
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0 auto; 
+    width: 90%; 
+}
+
+* Floated Layout */
+.float-container {
+    overflow: auto;
+}
+
+.float-child {
+    float: left; 
+    width: 45%; 
+    margin-right: 5%; 
+}
+
+.float-child:last-child {
+    margin-right: 0; 
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px;
+}
+
+/* Absolute and Relative Positioning */
+.relative-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+.absolute-child {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Footer Style */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgb(5, 93, 9);
+    color: white;
+}

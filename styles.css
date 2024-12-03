@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+/*
+	Project Part 1
+
+	CSS Style Sheet
+	Author: Rosario Sanchez
+	Date:   2024-10-27
+
+	Filename: styles.css
+
+   This file contains the base style.
+
+*/
+
+/* HTML and Body Styles */
+html {
+	font-size: 100%;
+}
+
+body {
+	color: rgb(68, 67, 66);
+	background-color: hsl(0, 100%, 97%);
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header Styles */
+h1 {
+	color: rgb(5, 93, 9);
+	background-color: hsl(0, 100%, 97%);
+	padding: 10px;
+	text-align: center;
+}
+
+h2 {
+	color: rgb(5, 93, 9);
+	padding: 10px;	
+}
+
+header img {
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+}
+
+/* Right-Aligned Image Style */
+.image-container {
+    float: right;
+    margin-left: 20px;
+}
+
+.right-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+	margin-right: 30px;
+}
+
+nav ul li a {
+    color: rgb(68, 67, 66);
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main Content Area */
+article {
+    margin: 20px 0;
+    padding: 15px; 
+    background-color: #fff;
+}
+
+/* Floated Layout */
+.float-container {
+    overflow: auto;
+}
+
+.float-child {
+    float: left; 
+    width: 45%; 
+    margin-right: 5%;
+}
+
+.float-child:last-child {
+    margin-right: 0; 
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px; 
+}
+
+/* Absolute and Relative Positioning */
+.relative-container {
+    position: relative; 
+    margin: 20px 0; 
+}
+
+.absolute-child {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+}
+
+/* Footer Style */
+footer {
+    text-align: center; 
+    background-color: rgb(5, 93, 9); 
+    color: white; 
+    padding: 15px; 
+}
+
+/* Handle Overflow */
+.overflow-example {
+    overflow: hidden; 
+}
+
+/* Responsive Desgin */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; 
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
